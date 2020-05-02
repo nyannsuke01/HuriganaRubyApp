@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEBEF68B245DB48700D0CD61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */; };
+		CEBEF68D245DB48700D0CD61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */; };
+		CEBEF68F245DB48700D0CD61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68E245DB48700D0CD61 /* ViewController.swift */; };
+		CEBEF692245DB48700D0CD61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEF690245DB48700D0CD61 /* Main.storyboard */; };
+		CEBEF694245DB48C00D0CD61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBEF693245DB48C00D0CD61 /* Assets.xcassets */; };
+		CEBEF697245DB48C00D0CD61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEF695245DB48C00D0CD61 /* LaunchScreen.storyboard */; };
+		CEBEF6A2245DB48C00D0CD61 /* HuriganaRubyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF6A1245DB48C00D0CD61 /* HuriganaRubyAppTests.swift */; };
+		CEBEF6AD245DB48C00D0CD61 /* HuriganaRubyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF6AC245DB48C00D0CD61 /* HuriganaRubyAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEBEF69E245DB48C00D0CD61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBEF67F245DB48700D0CD61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBEF686245DB48700D0CD61;
+			remoteInfo = HuriganaRubyApp;
+		};
+		CEBEF6A9245DB48C00D0CD61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBEF67F245DB48700D0CD61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBEF686245DB48700D0CD61;
+			remoteInfo = HuriganaRubyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEBEF687245DB48700D0CD61 /* HuriganaRubyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuriganaRubyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEBEF68E245DB48700D0CD61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEBEF691245DB48700D0CD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEBEF693245DB48C00D0CD61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEBEF696245DB48C00D0CD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEBEF698245DB48C00D0CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBEF69D245DB48C00D0CD61 /* HuriganaRubyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuriganaRubyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBEF6A1245DB48C00D0CD61 /* HuriganaRubyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuriganaRubyAppTests.swift; sourceTree = "<group>"; };
+		CEBEF6A3245DB48C00D0CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBEF6A8245DB48C00D0CD61 /* HuriganaRubyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuriganaRubyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBEF6AC245DB48C00D0CD61 /* HuriganaRubyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuriganaRubyAppUITests.swift; sourceTree = "<group>"; };
+		CEBEF6AE245DB48C00D0CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEBEF684245DB48700D0CD61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBEF69A245DB48C00D0CD61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBEF6A5245DB48C00D0CD61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEBEF67E245DB48700D0CD61 = {
+			isa = PBXGroup;
+			children = (
+				CEBEF689245DB48700D0CD61 /* HuriganaRubyApp */,
+				CEBEF6A0245DB48C00D0CD61 /* HuriganaRubyAppTests */,
+				CEBEF6AB245DB48C00D0CD61 /* HuriganaRubyAppUITests */,
+				CEBEF688245DB48700D0CD61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEBEF688245DB48700D0CD61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEBEF687245DB48700D0CD61 /* HuriganaRubyApp.app */,
+				CEBEF69D245DB48C00D0CD61 /* HuriganaRubyAppTests.xctest */,
+				CEBEF6A8245DB48C00D0CD61 /* HuriganaRubyAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEBEF689245DB48700D0CD61 /* HuriganaRubyApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */,
+				CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */,
+				CEBEF68E245DB48700D0CD61 /* ViewController.swift */,
+				CEBEF690245DB48700D0CD61 /* Main.storyboard */,
+				CEBEF693245DB48C00D0CD61 /* Assets.xcassets */,
+				CEBEF695245DB48C00D0CD61 /* LaunchScreen.storyboard */,
+				CEBEF698245DB48C00D0CD61 /* Info.plist */,
+			);
+			path = HuriganaRubyApp;
+			sourceTree = "<group>";
+		};
+		CEBEF6A0245DB48C00D0CD61 /* HuriganaRubyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEBEF6A1245DB48C00D0CD61 /* HuriganaRubyAppTests.swift */,
+				CEBEF6A3245DB48C00D0CD61 /* Info.plist */,
+			);
+			path = HuriganaRubyAppTests;
+			sourceTree = "<group>";
+		};
+		CEBEF6AB245DB48C00D0CD61 /* HuriganaRubyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEBEF6AC245DB48C00D0CD61 /* HuriganaRubyAppUITests.swift */,
+				CEBEF6AE245DB48C00D0CD61 /* Info.plist */,
+			);
+			path = HuriganaRubyAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEBEF686245DB48700D0CD61 /* HuriganaRubyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBEF6B1245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyApp" */;
+			buildPhases = (
+				CEBEF683245DB48700D0CD61 /* Sources */,
+				CEBEF684245DB48700D0CD61 /* Frameworks */,
+				CEBEF685245DB48700D0CD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuriganaRubyApp;
+			productName = HuriganaRubyApp;
+			productReference = CEBEF687245DB48700D0CD61 /* HuriganaRubyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEBEF69C245DB48C00D0CD61 /* HuriganaRubyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBEF6B4245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyAppTests" */;
+			buildPhases = (
+				CEBEF699245DB48C00D0CD61 /* Sources */,
+				CEBEF69A245DB48C00D0CD61 /* Frameworks */,
+				CEBEF69B245DB48C00D0CD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEBEF69F245DB48C00D0CD61 /* PBXTargetDependency */,
+			);
+			name = HuriganaRubyAppTests;
+			productName = HuriganaRubyAppTests;
+			productReference = CEBEF69D245DB48C00D0CD61 /* HuriganaRubyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEBEF6A7245DB48C00D0CD61 /* HuriganaRubyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBEF6B7245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyAppUITests" */;
+			buildPhases = (
+				CEBEF6A4245DB48C00D0CD61 /* Sources */,
+				CEBEF6A5245DB48C00D0CD61 /* Frameworks */,
+				CEBEF6A6245DB48C00D0CD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEBEF6AA245DB48C00D0CD61 /* PBXTargetDependency */,
+			);
+			name = HuriganaRubyAppUITests;
+			productName = HuriganaRubyAppUITests;
+			productReference = CEBEF6A8245DB48C00D0CD61 /* HuriganaRubyAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEBEF67F245DB48700D0CD61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CEBEF686245DB48700D0CD61 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					CEBEF69C245DB48C00D0CD61 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = CEBEF686245DB48700D0CD61;
+					};
+					CEBEF6A7245DB48C00D0CD61 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = CEBEF686245DB48700D0CD61;
+					};
+				};
+			};
+			buildConfigurationList = CEBEF682245DB48700D0CD61 /* Build configuration list for PBXProject "HuriganaRubyApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEBEF67E245DB48700D0CD61;
+			productRefGroup = CEBEF688245DB48700D0CD61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEBEF686245DB48700D0CD61 /* HuriganaRubyApp */,
+				CEBEF69C245DB48C00D0CD61 /* HuriganaRubyAppTests */,
+				CEBEF6A7245DB48C00D0CD61 /* HuriganaRubyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEBEF685245DB48700D0CD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBEF697245DB48C00D0CD61 /* LaunchScreen.storyboard in Resources */,
+				CEBEF694245DB48C00D0CD61 /* Assets.xcassets in Resources */,
+				CEBEF692245DB48700D0CD61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBEF69B245DB48C00D0CD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBEF6A6245DB48C00D0CD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEBEF683245DB48700D0CD61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBEF68F245DB48700D0CD61 /* ViewController.swift in Sources */,
+				CEBEF68B245DB48700D0CD61 /* AppDelegate.swift in Sources */,
+				CEBEF68D245DB48700D0CD61 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBEF699245DB48C00D0CD61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBEF6A2245DB48C00D0CD61 /* HuriganaRubyAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBEF6A4245DB48C00D0CD61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBEF6AD245DB48C00D0CD61 /* HuriganaRubyAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEBEF69F245DB48C00D0CD61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBEF686245DB48700D0CD61 /* HuriganaRubyApp */;
+			targetProxy = CEBEF69E245DB48C00D0CD61 /* PBXContainerItemProxy */;
+		};
+		CEBEF6AA245DB48C00D0CD61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBEF686245DB48700D0CD61 /* HuriganaRubyApp */;
+			targetProxy = CEBEF6A9245DB48C00D0CD61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEBEF690245DB48700D0CD61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBEF691245DB48700D0CD61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEBEF695245DB48C00D0CD61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBEF696245DB48C00D0CD61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEBEF6AF245DB48C00D0CD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEBEF6B0245DB48C00D0CD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEBEF6B2245DB48C00D0CD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = HuriganaRubyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.HuriganaRubyApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEBEF6B3245DB48C00D0CD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = HuriganaRubyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.HuriganaRubyApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEBEF6B5245DB48C00D0CD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = HuriganaRubyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.HuriganaRubyAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuriganaRubyApp.app/HuriganaRubyApp";
+			};
+			name = Debug;
+		};
+		CEBEF6B6245DB48C00D0CD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = HuriganaRubyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.HuriganaRubyAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuriganaRubyApp.app/HuriganaRubyApp";
+			};
+			name = Release;
+		};
+		CEBEF6B8245DB48C00D0CD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = HuriganaRubyAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.HuriganaRubyAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HuriganaRubyApp;
+			};
+			name = Debug;
+		};
+		CEBEF6B9245DB48C00D0CD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = HuriganaRubyAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.HuriganaRubyAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HuriganaRubyApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEBEF682245DB48700D0CD61 /* Build configuration list for PBXProject "HuriganaRubyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBEF6AF245DB48C00D0CD61 /* Debug */,
+				CEBEF6B0245DB48C00D0CD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBEF6B1245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBEF6B2245DB48C00D0CD61 /* Debug */,
+				CEBEF6B3245DB48C00D0CD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBEF6B4245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBEF6B5245DB48C00D0CD61 /* Debug */,
+				CEBEF6B6245DB48C00D0CD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBEF6B7245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBEF6B8245DB48C00D0CD61 /* Debug */,
+				CEBEF6B9245DB48C00D0CD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEBEF67F245DB48700D0CD61 /* Project object */;
+}
