@@ -1,0 +1,6 @@
+framework module Pods_HuriganaRubyApp_HuriganaRubyAppUITests {
+  umbrella header "Pods-HuriganaRubyApp-HuriganaRubyAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

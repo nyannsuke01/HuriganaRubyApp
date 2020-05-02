@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB7715030FA73E206765E454 /* Pods_HuriganaRubyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F74A39BDDA12B7DFF89D /* Pods_HuriganaRubyAppTests.framework */; };
 		CEBEF68B245DB48700D0CD61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */; };
 		CEBEF68D245DB48700D0CD61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */; };
 		CEBEF68F245DB48700D0CD61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68E245DB48700D0CD61 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		CEBEF697245DB48C00D0CD61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEF695245DB48C00D0CD61 /* LaunchScreen.storyboard */; };
 		CEBEF6A2245DB48C00D0CD61 /* HuriganaRubyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF6A1245DB48C00D0CD61 /* HuriganaRubyAppTests.swift */; };
 		CEBEF6AD245DB48C00D0CD61 /* HuriganaRubyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF6AC245DB48C00D0CD61 /* HuriganaRubyAppUITests.swift */; };
+		EBE3277ABB2C23A1437EF6E3 /* Pods_HuriganaRubyApp_HuriganaRubyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDE22029A560C93663C9C8A /* Pods_HuriganaRubyApp_HuriganaRubyAppUITests.framework */; };
+		FD55B91D62278459F12A7286 /* Pods_HuriganaRubyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4713666A455341181BDDA892 /* Pods_HuriganaRubyApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0522D11B141130D17F5AC0ED /* Pods-HuriganaRubyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuriganaRubyAppTests.release.xcconfig"; path = "Target Support Files/Pods-HuriganaRubyAppTests/Pods-HuriganaRubyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CB4F74A39BDDA12B7DFF89D /* Pods_HuriganaRubyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuriganaRubyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA15BFC29AC6212DEF9EE27 /* Pods-HuriganaRubyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuriganaRubyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HuriganaRubyAppTests/Pods-HuriganaRubyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4713666A455341181BDDA892 /* Pods_HuriganaRubyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuriganaRubyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A78D3BC137FF8C481E9065 /* Pods-HuriganaRubyApp-HuriganaRubyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuriganaRubyApp-HuriganaRubyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-HuriganaRubyApp-HuriganaRubyAppUITests/Pods-HuriganaRubyApp-HuriganaRubyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A7631346F50E86AD00E6E532 /* Pods-HuriganaRubyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuriganaRubyApp.release.xcconfig"; path = "Target Support Files/Pods-HuriganaRubyApp/Pods-HuriganaRubyApp.release.xcconfig"; sourceTree = "<group>"; };
+		AFDE22029A560C93663C9C8A /* Pods_HuriganaRubyApp_HuriganaRubyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuriganaRubyApp_HuriganaRubyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD90E7BCB850B17E60F4801C /* Pods-HuriganaRubyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuriganaRubyApp.debug.xcconfig"; path = "Target Support Files/Pods-HuriganaRubyApp/Pods-HuriganaRubyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CEBEF687245DB48700D0CD61 /* HuriganaRubyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuriganaRubyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		CEBEF6A8245DB48C00D0CD61 /* HuriganaRubyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuriganaRubyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEF6AC245DB48C00D0CD61 /* HuriganaRubyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuriganaRubyAppUITests.swift; sourceTree = "<group>"; };
 		CEBEF6AE245DB48C00D0CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F394837A0B9DE46B1ED289BD /* Pods-HuriganaRubyApp-HuriganaRubyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuriganaRubyApp-HuriganaRubyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-HuriganaRubyApp-HuriganaRubyAppUITests/Pods-HuriganaRubyApp-HuriganaRubyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD55B91D62278459F12A7286 /* Pods_HuriganaRubyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7715030FA73E206765E454 /* Pods_HuriganaRubyAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE3277ABB2C23A1437EF6E3 /* Pods_HuriganaRubyApp_HuriganaRubyAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EB06C6C78F2312237BE457B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4713666A455341181BDDA892 /* Pods_HuriganaRubyApp.framework */,
+				AFDE22029A560C93663C9C8A /* Pods_HuriganaRubyApp_HuriganaRubyAppUITests.framework */,
+				3CB4F74A39BDDA12B7DFF89D /* Pods_HuriganaRubyAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58C26E38118BB99E9400F935 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD90E7BCB850B17E60F4801C /* Pods-HuriganaRubyApp.debug.xcconfig */,
+				A7631346F50E86AD00E6E532 /* Pods-HuriganaRubyApp.release.xcconfig */,
+				F394837A0B9DE46B1ED289BD /* Pods-HuriganaRubyApp-HuriganaRubyAppUITests.debug.xcconfig */,
+				49A78D3BC137FF8C481E9065 /* Pods-HuriganaRubyApp-HuriganaRubyAppUITests.release.xcconfig */,
+				3EA15BFC29AC6212DEF9EE27 /* Pods-HuriganaRubyAppTests.debug.xcconfig */,
+				0522D11B141130D17F5AC0ED /* Pods-HuriganaRubyAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CEBEF67E245DB48700D0CD61 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				CEBEF6A0245DB48C00D0CD61 /* HuriganaRubyAppTests */,
 				CEBEF6AB245DB48C00D0CD61 /* HuriganaRubyAppUITests */,
 				CEBEF688245DB48700D0CD61 /* Products */,
+				58C26E38118BB99E9400F935 /* Pods */,
+				4EB06C6C78F2312237BE457B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBEF6B1245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyApp" */;
 			buildPhases = (
+				291736DB76E41689A637041C /* [CP] Check Pods Manifest.lock */,
 				CEBEF683245DB48700D0CD61 /* Sources */,
 				CEBEF684245DB48700D0CD61 /* Frameworks */,
 				CEBEF685245DB48700D0CD61 /* Resources */,
+				FCCB28913DA5C62FCB0172A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBEF6B4245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyAppTests" */;
 			buildPhases = (
+				279A1933384DC7205951A7E6 /* [CP] Check Pods Manifest.lock */,
 				CEBEF699245DB48C00D0CD61 /* Sources */,
 				CEBEF69A245DB48C00D0CD61 /* Frameworks */,
 				CEBEF69B245DB48C00D0CD61 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBEF6B7245DB48C00D0CD61 /* Build configuration list for PBXNativeTarget "HuriganaRubyAppUITests" */;
 			buildPhases = (
+				725257119CB8DD79BEB3FA4F /* [CP] Check Pods Manifest.lock */,
 				CEBEF6A4245DB48C00D0CD61 /* Sources */,
 				CEBEF6A5245DB48C00D0CD61 /* Frameworks */,
 				CEBEF6A6245DB48C00D0CD61 /* Resources */,
+				8EE1524D929BC81071F77E5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		279A1933384DC7205951A7E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuriganaRubyAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		291736DB76E41689A637041C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuriganaRubyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		725257119CB8DD79BEB3FA4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuriganaRubyApp-HuriganaRubyAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE1524D929BC81071F77E5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuriganaRubyApp-HuriganaRubyAppUITests/Pods-HuriganaRubyApp-HuriganaRubyAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuriganaRubyApp-HuriganaRubyAppUITests/Pods-HuriganaRubyApp-HuriganaRubyAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuriganaRubyApp-HuriganaRubyAppUITests/Pods-HuriganaRubyApp-HuriganaRubyAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCB28913DA5C62FCB0172A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuriganaRubyApp/Pods-HuriganaRubyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuriganaRubyApp/Pods-HuriganaRubyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuriganaRubyApp/Pods-HuriganaRubyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEBEF683245DB48700D0CD61 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		CEBEF6B2245DB48C00D0CD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD90E7BCB850B17E60F4801C /* Pods-HuriganaRubyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +600,7 @@
 		};
 		CEBEF6B3245DB48C00D0CD61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7631346F50E86AD00E6E532 /* Pods-HuriganaRubyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +619,7 @@
 		};
 		CEBEF6B5245DB48C00D0CD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA15BFC29AC6212DEF9EE27 /* Pods-HuriganaRubyAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +642,7 @@
 		};
 		CEBEF6B6245DB48C00D0CD61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0522D11B141130D17F5AC0ED /* Pods-HuriganaRubyAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +665,7 @@
 		};
 		CEBEF6B8245DB48C00D0CD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F394837A0B9DE46B1ED289BD /* Pods-HuriganaRubyApp-HuriganaRubyAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +686,7 @@
 		};
 		CEBEF6B9245DB48C00D0CD61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A78D3BC137FF8C481E9065 /* Pods-HuriganaRubyApp-HuriganaRubyAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

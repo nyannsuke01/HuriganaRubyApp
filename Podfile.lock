@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.9.0)
+  - SwiftFormat/CLI (0.44.8)
+  - SwiftLint (0.39.2)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftFormat/CLI
+  - SwiftLint
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwiftFormat
+    - SwiftLint
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  SwiftFormat: 4797d1b148ee7575901fb0f3dadab60b1c9617dc
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: a9e6f3a7438d8c0f2e7a87a074cae3ff8020fe43
+
+COCOAPODS: 1.8.4
