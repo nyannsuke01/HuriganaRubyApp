@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AB7715030FA73E206765E454 /* Pods_HuriganaRubyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F74A39BDDA12B7DFF89D /* Pods_HuriganaRubyAppTests.framework */; };
+		CE145126245E8FA600B98DEF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE145125245E8FA600B98DEF /* Constants.swift */; };
+		CE5237DE245E52EE00D290F8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5237DD245E52EE00D290F8 /* ResultViewController.swift */; };
 		CEBEF68B245DB48700D0CD61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */; };
 		CEBEF68D245DB48700D0CD61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */; };
 		CEBEF68F245DB48700D0CD61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEF68E245DB48700D0CD61 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		A7631346F50E86AD00E6E532 /* Pods-HuriganaRubyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuriganaRubyApp.release.xcconfig"; path = "Target Support Files/Pods-HuriganaRubyApp/Pods-HuriganaRubyApp.release.xcconfig"; sourceTree = "<group>"; };
 		AFDE22029A560C93663C9C8A /* Pods_HuriganaRubyApp_HuriganaRubyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuriganaRubyApp_HuriganaRubyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD90E7BCB850B17E60F4801C /* Pods-HuriganaRubyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuriganaRubyApp.debug.xcconfig"; path = "Target Support Files/Pods-HuriganaRubyApp/Pods-HuriganaRubyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CE145125245E8FA600B98DEF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE5237DD245E52EE00D290F8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		CEBEF687245DB48700D0CD61 /* HuriganaRubyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuriganaRubyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,8 +115,34 @@
 				3EA15BFC29AC6212DEF9EE27 /* Pods-HuriganaRubyAppTests.debug.xcconfig */,
 				0522D11B141130D17F5AC0ED /* Pods-HuriganaRubyAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE5237DF245E637F00D290F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE5237E0245E639600D290F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBEF690245DB48700D0CD61 /* Main.storyboard */,
+				CEBEF693245DB48C00D0CD61 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5237E1245E63A000D290F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */,
+				CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */,
+				CEBEF68E245DB48700D0CD61 /* ViewController.swift */,
+				CE5237DD245E52EE00D290F8 /* ResultViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CEBEF67E245DB48700D0CD61 = {
@@ -140,13 +170,12 @@
 		CEBEF689245DB48700D0CD61 /* HuriganaRubyApp */ = {
 			isa = PBXGroup;
 			children = (
-				CEBEF68A245DB48700D0CD61 /* AppDelegate.swift */,
-				CEBEF68C245DB48700D0CD61 /* SceneDelegate.swift */,
-				CEBEF68E245DB48700D0CD61 /* ViewController.swift */,
-				CEBEF690245DB48700D0CD61 /* Main.storyboard */,
-				CEBEF693245DB48C00D0CD61 /* Assets.xcassets */,
-				CEBEF695245DB48C00D0CD61 /* LaunchScreen.storyboard */,
+				CE5237E1245E63A000D290F8 /* Controller */,
+				CE5237E0245E639600D290F8 /* View */,
+				CE5237DF245E637F00D290F8 /* Model */,
 				CEBEF698245DB48C00D0CD61 /* Info.plist */,
+				CEBEF695245DB48C00D0CD61 /* LaunchScreen.storyboard */,
+				CE145125245E8FA600B98DEF /* Constants.swift */,
 			);
 			path = HuriganaRubyApp;
 			sourceTree = "<group>";
@@ -181,6 +210,7 @@
 				CEBEF684245DB48700D0CD61 /* Frameworks */,
 				CEBEF685245DB48700D0CD61 /* Resources */,
 				FCCB28913DA5C62FCB0172A5 /* [CP] Embed Pods Frameworks */,
+				CE145127245E9D9300B98DEF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -384,6 +414,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuriganaRubyApp-HuriganaRubyAppUITests/Pods-HuriganaRubyApp-HuriganaRubyAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CE145127245E9D9300B98DEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
 		FCCB28913DA5C62FCB0172A5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,9 +456,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE145126245E8FA600B98DEF /* Constants.swift in Sources */,
 				CEBEF68F245DB48700D0CD61 /* ViewController.swift in Sources */,
 				CEBEF68B245DB48700D0CD61 /* AppDelegate.swift in Sources */,
 				CEBEF68D245DB48700D0CD61 /* SceneDelegate.swift in Sources */,
+				CE5237DE245E52EE00D290F8 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
