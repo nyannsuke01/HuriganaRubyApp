@@ -19,6 +19,7 @@
                                 <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5c-bH-JbB"/>
                                     <segue destination="5E2-gj-dVj" kind="show" id="VCc-cn-080"/>
                                 </connections>
                             </button>
@@ -35,6 +36,12 @@
                                 <rect key="frame" x="20" y="523" width="167" height="235"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mu4-hj-RXG">
+                                <rect key="frame" x="71" y="471" width="286" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -47,15 +54,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="ひらがなに変換" id="1xE-JK-7Gi"/>
+                    <connections>
+                        <outlet property="inputTextView" destination="59a-zD-eoe" id="bCR-bJ-ekW"/>
+                        <outlet property="outputTextView" destination="mu4-hj-RXG" id="vfK-z3-VuA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2271.0144927536235" y="6.6964285714285712"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="rEE-M8-zVp">
             <objects>
-                <viewController id="5E2-gj-dVj" sceneMemberID="viewController">
+                <viewController id="5E2-gj-dVj" customClass="ResultViewController" customModule="HuriganaRubyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CD1-ll-h1k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

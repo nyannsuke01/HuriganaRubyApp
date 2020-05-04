@@ -10,6 +10,7 @@ target 'HuriganaRubyApp' do
    pod 'SwiftyJSON'
    pod 'SwiftLint'
    pod 'SwiftFormat/CLI'
+   pod 'R.swift'
  
   target 'HuriganaRubyAppTests' do
     inherit! :search_paths
