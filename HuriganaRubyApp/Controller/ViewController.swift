@@ -27,35 +27,31 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertButton(_ sender: UIButton) {
-        HttpRequest()
+        HttpRequest(sentence: inputTextView.text!)
+        //presenterのconvertToRubiを入力した文字列を引数にして実行
+
     }
 
-    func HttpRequest() {
+    func HttpRequest(sentence: String) {
         let url = "https://labs.goo.ne.jp/api/hiragana"
-        let headers: HTTPHeaders = [
-            "Contenttype": "application/json"
-        ]
+//        let headers: HTTPHeaders = [
+//            "Contenttype": "application/json"
+//        ]
         let parameters:[String: Any] = [
-            "app_id": String.self,
-            "request_id": String.self,
-             "sentence": String.self,
-             "output_type": String.self
+            "app_id": GooAPI.APP_ID,
+            "request_id": "",
+             "sentence": sentence,
+             "output_type": "hiragana"
             ]
 
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
             if let result = response.result.value as? [String: Any] {
                 print(result)
             }
         }
 
     }
-
-
-
-
-
-
-
+    
 
 
 }
