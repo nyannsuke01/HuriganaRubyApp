@@ -93,6 +93,9 @@
                         <viewLayoutGuide key="safeArea" id="vZX-F3-VEj"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Jf-HJ-WdB"/>
+                    <connections>
+                        <outlet property="resultTextView" destination="yXQ-dt-L7r" id="Xfi-fg-If8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJj-AF-eMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

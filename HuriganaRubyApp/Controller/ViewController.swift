@@ -7,51 +7,47 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var inputTextView: UITextField!
     @IBOutlet weak var outputTextView: UITextField!
+    // APIRequestの初期化
+    var apiRequest = APIRequest()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        inputTextView.delegate = self
+        outputTextView.delegate = self
+
+       
         initInputText()
        // HttpRequest()
       // getArticles()
 
     }
+
+
     private func initInputText() {
         inputTextView.text = ""
     }
 
+    //タッチでキーボードを閉じる
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+
+    //エンターでキーボードを閉じる
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+
     @IBAction func convertButton(_ sender: UIButton) {
-        HttpRequest(sentence: inputTextView.text!)
+        apiRequest.HttpRequest(sentence: inputTextView.text!)
         //presenterのconvertToRubiを入力した文字列を引数にして実行
 
     }
-
-    func HttpRequest(sentence: String) {
-        let url = "https://labs.goo.ne.jp/api/hiragana"
-//        let headers: HTTPHeaders = [
-//            "Contenttype": "application/json"
-//        ]
-        let parameters:[String: Any] = [
-            "app_id": GooAPI.APP_ID,
-            "request_id": "",
-             "sentence": sentence,
-             "output_type": "hiragana"
-            ]
-
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
-            if let result = response.result.value as? [String: Any] {
-                print(result)
-            }
-        }
-
-    }
-    
 
 
 }
