@@ -71,27 +71,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="へんかんされたもじはこれ！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-oS-agf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="へんかんされたもじはこれ！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-oS-agf">
                                 <rect key="frame" x="95" y="148" width="226" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGH-Cz-qtb">
-                                <rect key="frame" x="95" y="246" width="300" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCd-vj-iaX">
+                                <rect key="frame" x="57" y="208" width="300" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyZ-1N-LB1">
+                                <rect key="frame" x="57" y="349" width="300" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vZX-F3-VEj" firstAttribute="trailing" secondItem="uCd-vj-iaX" secondAttribute="trailing" constant="57" id="6Ql-w3-ThO"/>
+                            <constraint firstItem="uCd-vj-iaX" firstAttribute="leading" secondItem="vZX-F3-VEj" secondAttribute="leading" constant="57" id="B7C-i1-YeU"/>
+                            <constraint firstItem="vZX-F3-VEj" firstAttribute="trailing" secondItem="uCd-vj-iaX" secondAttribute="trailing" constant="57" id="Dqa-67-kcq"/>
+                            <constraint firstItem="uCd-vj-iaX" firstAttribute="top" secondItem="xx8-oS-agf" secondAttribute="bottom" constant="39" id="L1f-2B-r9a"/>
+                            <constraint firstItem="xx8-oS-agf" firstAttribute="top" secondItem="vZX-F3-VEj" secondAttribute="top" constant="60" id="LcO-oJ-GUA"/>
+                            <constraint firstItem="xx8-oS-agf" firstAttribute="leading" secondItem="vZX-F3-VEj" secondAttribute="leading" constant="95" id="TST-Dg-Lhn"/>
+                            <constraint firstItem="uCd-vj-iaX" firstAttribute="leading" secondItem="vZX-F3-VEj" secondAttribute="leading" constant="57" id="Z7Q-T7-ctb"/>
+                            <constraint firstItem="uCd-vj-iaX" firstAttribute="top" secondItem="xx8-oS-agf" secondAttribute="bottom" constant="39" id="lt4-wy-dNl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vZX-F3-VEj"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Jf-HJ-WdB"/>
                     <connections>
-                        <outlet property="resultTextLabel" destination="PGH-Cz-qtb" id="AFd-VQ-6Gb"/>
+                        <outlet property="resultTextLabel" destination="uyZ-1N-LB1" id="TRW-Pq-jqU"/>
+                        <outlet property="resultTextView" destination="uCd-vj-iaX" id="Lu7-5B-IhB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJj-AF-eMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

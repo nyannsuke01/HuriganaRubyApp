@@ -37,12 +37,13 @@ public class APIRequest {
 //                                var resultString2 = json["output_type"].string
                                 var resultString = json["converted"].string
                                 print(json["converted"])
-                                print(resultString as Any)
+                                print(resultString)
                                 ResultVC.showResult(resultString: resultString!)
+//                                VC.showRubi(resultString: resultString!)
                             }
                     // 処理失敗時
                     case .failure(let error):
-                        // エラーメッセージの表示等
+                    // エラーメッセージの表示等
                     print(error)
                 
                 }

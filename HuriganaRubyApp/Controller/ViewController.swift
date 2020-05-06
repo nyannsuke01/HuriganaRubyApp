@@ -36,18 +36,21 @@ class ViewController: UIViewController,UITextFieldDelegate {
     //エンターでキーボードを閉じる
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+
+        if let imputWord = inputTextView.text{
+            print("変換前　:" + imputWord)
+        }
+        return true
     }
 
     @IBAction func convertButton(_ sender: UIButton) {
         //キーボードを閉じる
         view.endEditing(true)
 
-       // if let inputTextView = inputTextView.text {
-        apiRequest.HttpRequest(
-            sentence: inputTextView.text!
+        //if let inputTextView = inputTextView.text {
+            apiRequest.HttpRequest(sentence: inputTextView.text!)
 
 
-        )
 
     }
     // ふりがな変換後テキストを出力
@@ -65,11 +68,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
     }
 
-
-
-
     // エラーを出力
-    func showError(errorMessage: String) {
+    func showError() {
         //outputTextのテキストフィールドに空欄を入れる
         outputTextView.text = ""
         //UIAlertControllerのshowAlertメソッドを実行（引数にメッセージを入れる）

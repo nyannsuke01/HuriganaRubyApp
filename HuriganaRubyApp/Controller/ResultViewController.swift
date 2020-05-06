@@ -8,17 +8,21 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController, UITextFieldDelegate {
 
 
+    @IBOutlet weak var resultTextView: UITextField!
     @IBOutlet weak var resultTextLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultTextView.delegate = self
 
     }
+
+
     func showResult(resultString: String) {
-        resultTextLabel?.text = resultString
+        resultTextView?.text = resultString
         print(resultString)
     }
 
