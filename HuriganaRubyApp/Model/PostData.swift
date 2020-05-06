@@ -10,6 +10,6 @@
 struct PostData: Codable {
     var app_id: String
     var request_id: String
-    var sentence: String
+    var sentence: String?
     var output_type: String
 }

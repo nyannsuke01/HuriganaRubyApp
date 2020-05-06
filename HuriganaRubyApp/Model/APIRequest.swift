@@ -9,36 +9,45 @@
 import Alamofire
 import SwiftyJSON
 
+// ViewControllerの初期化
+var VC = ViewController()
+var ResultVC = ResultViewController()
 
 public class APIRequest {
 
       func HttpRequest(sentence: String) {
-            let url = "https://labs.goo.ne.jp/api/hiragana"
+        let url = GooAPI.Request.URL
 
             let parameters:[String: Any] = [
                 "app_id": GooAPI.APP_ID,
-                "request_id": "",
+                "request_id": GooAPI.Request.REQUEST_ID,
                 "sentence": sentence,
-                "output_type": "hiragana"
+                "output_type": GooAPI.Request.OUTPUT_TYPE
                 ]
 
             Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
-            switch response.result {
+                switch response.result {
                     // 処理成功時
                     case .success:
                             if let result = response.result.value as? [String: Any] {
                                 print(result)
                             //SwiftyJSONを使用してJSON解析
                                 let json:JSON = JSON(response.data as Any)
-                                var resultString = json["result"][0].string
-
-                }
+//                                var resultString = json["request_id"].string
+//                                var resultString2 = json["output_type"].string
+                                var resultString = json["converted"].string
+                                print(json["converted"])
+                                print(resultString as Any)
+                                ResultVC.showResult(resultString: resultString!)
+                            }
                     // 処理失敗時
                     case .failure(let error):
                         // エラーメッセージの表示等
                     print(error)
+                
                 }
             }
         }
+
     
 }

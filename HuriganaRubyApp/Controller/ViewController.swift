@@ -20,14 +20,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
         inputTextView.delegate = self
         outputTextView.delegate = self
-
-       
         initInputText()
-       // HttpRequest()
-      // getArticles()
 
     }
-
 
     private func initInputText() {
         inputTextView.text = ""
@@ -44,10 +39,45 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     @IBAction func convertButton(_ sender: UIButton) {
-        apiRequest.HttpRequest(sentence: inputTextView.text!)
-        //presenterのconvertToRubiを入力した文字列を引数にして実行
+        //キーボードを閉じる
+        view.endEditing(true)
+
+       // if let inputTextView = inputTextView.text {
+        apiRequest.HttpRequest(
+            sentence: inputTextView.text!
+
+
+        )
+
+    }
+    // ふりがな変換後テキストを出力
+    func showRubi(resultString: String) {
+        //くるくる消える
+        //SVProgressHUD.dismiss()
+        //outputTextのテキストフィールドに変換されてきた文字列を入れる
+        outputTextView?.text = resultString
+    }
+    // ModalViewに値を渡す
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+       // let modalVC = segue.destination as! ModalViewController
+       // modalVC.result = hiraganaSentence
 
     }
 
+
+
+
+    // エラーを出力
+    func showError(errorMessage: String) {
+        //outputTextのテキストフィールドに空欄を入れる
+        outputTextView.text = ""
+        //UIAlertControllerのshowAlertメソッドを実行（引数にメッセージを入れる）
+//         UIAlertController.showAlert(viewController: self,
+//                                    title: "",
+//                                    message: errorMessage,
+//                                    buttonTitle: Message.Button.OK,
+//                                    buttonAction: nil)
+    }
 
 }

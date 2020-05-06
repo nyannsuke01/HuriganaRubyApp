@@ -78,23 +78,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yXQ-dt-L7r">
-                                <rect key="frame" x="57" y="208" width="300" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGH-Cz-qtb">
+                                <rect key="frame" x="95" y="246" width="300" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="vZX-F3-VEj" firstAttribute="trailing" secondItem="yXQ-dt-L7r" secondAttribute="trailing" constant="57" id="5Ih-uk-UfR"/>
-                            <constraint firstItem="yXQ-dt-L7r" firstAttribute="top" secondItem="CD1-ll-h1k" secondAttribute="topMargin" constant="120" id="7lq-mG-sJn"/>
-                            <constraint firstItem="yXQ-dt-L7r" firstAttribute="leading" secondItem="vZX-F3-VEj" secondAttribute="leading" constant="57" id="bal-6B-SDO"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vZX-F3-VEj"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Jf-HJ-WdB"/>
                     <connections>
-                        <outlet property="resultTextView" destination="yXQ-dt-L7r" id="Xfi-fg-If8"/>
+                        <outlet property="resultTextLabel" destination="PGH-Cz-qtb" id="AFd-VQ-6Gb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJj-AF-eMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

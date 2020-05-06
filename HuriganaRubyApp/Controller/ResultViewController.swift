@@ -10,14 +10,17 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    @IBOutlet weak var resultTextView: UITextField!
+
+    @IBOutlet weak var resultTextLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultTextView.text = ""
     }
-    
+    func showResult(resultString: String) {
+        resultTextLabel?.text = resultString
+        print(resultString)
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
