@@ -10,9 +10,7 @@ import UIKit
 
 class ResultViewController: UIViewController, UITextFieldDelegate {
 
-
     @IBOutlet weak var resultTextView: UITextField!
-    @IBOutlet weak var resultTextLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

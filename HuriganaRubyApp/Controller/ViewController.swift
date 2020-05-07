@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var inputTextView: UITextField!
-    @IBOutlet weak var outputTextView: UITextField!
+    @IBOutlet weak var convertButton: UIButton!
     // APIRequestの初期化
     var apiRequest = APIRequest()
 
@@ -19,7 +19,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
 
         inputTextView.delegate = self
-        outputTextView.delegate = self
         initInputText()
 
     }
@@ -47,37 +46,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
         //キーボードを閉じる
         view.endEditing(true)
 
-        //if let inputTextView = inputTextView.text {
+        if inputTextView.text == "" {
+            //UIButtonを無効化
+            convertButton.isEnabled = false
+        }
         apiRequest.HttpRequest(sentence: inputTextView.text!)
 
-
-
-    }
-    // ふりがな変換後テキストを出力
-    func showRubi(resultString: String) {
-        //くるくる消える
-        //SVProgressHUD.dismiss()
-        //outputTextのテキストフィールドに変換されてきた文字列を入れる
-        outputTextView?.text = resultString
-    }
-    // ModalViewに値を渡す
-      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-       // let modalVC = segue.destination as! ModalViewController
-       // modalVC.result = hiraganaSentence
-
-    }
-
-    // エラーを出力
-    func showError() {
-        //outputTextのテキストフィールドに空欄を入れる
-        outputTextView.text = ""
-        //UIAlertControllerのshowAlertメソッドを実行（引数にメッセージを入れる）
-//         UIAlertController.showAlert(viewController: self,
-//                                    title: "",
-//                                    message: errorMessage,
-//                                    buttonTitle: Message.Button.OK,
-//                                    buttonAction: nil)
     }
 
 }
