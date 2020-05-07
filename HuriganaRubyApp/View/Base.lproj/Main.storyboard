@@ -20,7 +20,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5c-bH-JbB"/>
-                                    <segue destination="5E2-gj-dVj" kind="show" id="VCc-cn-080"/>
+                                    <segue destination="5E2-gj-dVj" kind="push" id="VCc-cn-080"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ここに漢字かな混じり文字を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="59a-zD-eoe">

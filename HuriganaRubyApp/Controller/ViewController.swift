@@ -48,7 +48,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         view.endEditing(true)
 
         //if let inputTextView = inputTextView.text {
-            apiRequest.HttpRequest(sentence: inputTextView.text!)
+        apiRequest.HttpRequest(sentence: inputTextView.text!)
 
 
 

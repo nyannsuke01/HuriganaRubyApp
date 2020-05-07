@@ -26,7 +26,4 @@ class ResultViewController: UIViewController, UITextFieldDelegate {
         print(resultString)
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
-
 }

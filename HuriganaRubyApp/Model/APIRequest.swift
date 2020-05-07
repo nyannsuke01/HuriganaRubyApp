@@ -30,16 +30,10 @@ public class APIRequest {
                     // 処理成功時
                     case .success:
                             if let result = response.result.value as? [String: Any] {
-                                print(result)
                             //SwiftyJSONを使用してJSON解析
                                 let json:JSON = JSON(response.data as Any)
-//                                var resultString = json["request_id"].string
-//                                var resultString2 = json["output_type"].string
                                 var resultString = json["converted"].string
-                                print(json["converted"])
-                                print(resultString)
                                 ResultVC.showResult(resultString: resultString!)
-//                                VC.showRubi(resultString: resultString!)
                             }
                     // 処理失敗時
                     case .failure(let error):
