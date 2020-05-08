@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SQg-mM-aWK">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,72 +12,84 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HuriganaRubyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="convertButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXe-es-3u5">
-                                <rect key="frame" x="178" y="230" width="59" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="変換"/>
-                                <connections>
-                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5c-bH-JbB"/>
-                                    <segue destination="5E2-gj-dVj" kind="push" id="VCc-cn-080"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fairy_gide" translatesAutoresizingMaskIntoConstraints="NO" id="ygl-qQ-cra">
-                                <rect key="frame" x="20" y="285" width="368" height="383"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ここに文字を入力" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="59a-zD-eoe">
-                                <rect key="frame" x="71" y="169" width="300" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="59a-zD-eoe" secondAttribute="height" multiplier="150:17" id="k5d-PM-y22"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ここに文字を入力" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="59a-zD-eoe">
+                                <rect key="frame" x="57" y="128" width="261" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="convertButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXe-es-3u5">
+                                <rect key="frame" x="158" y="202" width="59" height="47"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="変換">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5c-bH-JbB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fairy_gide" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygl-qQ-cra">
+                                <rect key="frame" x="36" y="299" width="302" height="348"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="59a-zD-eoe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="DEJ-I6-NHA"/>
+                            <constraint firstItem="LXe-es-3u5" firstAttribute="centerX" secondItem="59a-zD-eoe" secondAttribute="centerX" id="FqO-v1-R3e"/>
+                            <constraint firstItem="LXe-es-3u5" firstAttribute="top" secondItem="59a-zD-eoe" secondAttribute="bottom" constant="40" id="iyP-UG-BrO"/>
+                            <constraint firstItem="59a-zD-eoe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="r3e-Ru-o9l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="59a-zD-eoe" secondAttribute="trailing" constant="57" id="tDp-qB-zPt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="ひらがなに変換" id="1xE-JK-7Gi"/>
                     <connections>
-                        <outlet property="convertButton" destination="LXe-es-3u5" id="9Bq-jc-SDb"/>
                         <outlet property="inputTextView" destination="59a-zD-eoe" id="bCR-bJ-ekW"/>
+                        <segue destination="5E2-gj-dVj" kind="show" identifier="nextSegue" id="nhf-Dh-R40"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271.0144927536235" y="6.6964285714285712"/>
+            <point key="canvasLocation" x="2269.5999999999999" y="6.6502463054187197"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="rEE-M8-zVp">
             <objects>
                 <viewController id="5E2-gj-dVj" customClass="ResultViewController" customModule="HuriganaRubyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CD1-ll-h1k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="へんかんされたもじはこれ！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-oS-agf">
-                                <rect key="frame" x="94" y="128" width="226" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="へんかんされたもじはこれ！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-oS-agf">
+                                <rect key="frame" x="74" y="107" width="226" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCd-vj-iaX">
-                                <rect key="frame" x="57" y="182" width="300" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resultImage" translatesAutoresizingMaskIntoConstraints="NO" id="dwO-O6-Tyo">
+                                <rect key="frame" x="17" y="241" width="340" height="374"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCd-vj-iaX">
+                                <rect key="frame" x="37" y="145" width="300" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resultImage" translatesAutoresizingMaskIntoConstraints="NO" id="dwO-O6-Tyo">
-                                <rect key="frame" x="0.0" y="248" width="413" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xx8-oS-agf" firstAttribute="top" secondItem="vZX-F3-VEj" secondAttribute="top" constant="19" id="3df-aG-KGm"/>
+                            <constraint firstItem="vZX-F3-VEj" firstAttribute="trailing" secondItem="uCd-vj-iaX" secondAttribute="trailing" constant="38" id="AhV-EG-rph"/>
+                            <constraint firstItem="xx8-oS-agf" firstAttribute="leading" secondItem="vZX-F3-VEj" secondAttribute="leading" constant="74" id="VNG-ar-fTn"/>
+                            <constraint firstItem="uCd-vj-iaX" firstAttribute="top" secondItem="xx8-oS-agf" secondAttribute="bottom" constant="17.670000000000002" id="ddb-Ya-NBB"/>
+                            <constraint firstItem="vZX-F3-VEj" firstAttribute="trailing" secondItem="xx8-oS-agf" secondAttribute="trailing" constant="75" id="mAk-w7-eQ4"/>
+                            <constraint firstItem="uCd-vj-iaX" firstAttribute="leading" secondItem="vZX-F3-VEj" secondAttribute="leading" constant="37" id="zZo-XO-446"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vZX-F3-VEj"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Jf-HJ-WdB"/>
@@ -87,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJj-AF-eMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3017.3913043478265" y="6.6964285714285712"/>
+            <point key="canvasLocation" x="3016.8000000000002" y="6.6502463054187197"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qEh-wf-1XY">
@@ -95,7 +107,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SQg-mM-aWK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ytU-8m-Ajp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

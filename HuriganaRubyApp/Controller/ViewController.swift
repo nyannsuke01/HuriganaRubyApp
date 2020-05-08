@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var inputTextView: UITextField!
-    @IBOutlet weak var convertButton: UIButton!
     // APIRequestの初期化
     var apiRequest = APIRequest()
 
@@ -20,7 +19,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
         inputTextView.delegate = self
         initInputText()
-
     }
 
     private func initInputText() {
@@ -45,13 +43,28 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func convertButton(_ sender: UIButton) {
         //キーボードを閉じる
         view.endEditing(true)
+        
 
-        if inputTextView.text == "" {
-            //UIButtonを無効化
-            convertButton.isEnabled = false
-        }
-        apiRequest.HttpRequest(sentence: inputTextView.text!)
+        // リクエストを渡す時にクロージャも渡し、その内部で書き換えの処理を行う
+        // クロージャの処理は completion: の後の {} の中
+        apiRequest.HttpRequest(sentence: inputTextView.text!, completion: {
+            result in
 
+            // prepare の sender: には result を渡す
+            self.performSegue(withIdentifier: "nextSegue", sender: result)
+
+        })
     }
 
+    // segue を使って値渡しする場合
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 遷移先が ResultViewController の場合
+        if let nextVC = segue.destination as? ResultViewController {
+            // sender が　String としてダウンキャストできる場合
+            if let result = sender as? String {
+                // 遷移先のプロパティに値をセットする
+                nextVC.result = result
+            }
+        }
+    }
 }

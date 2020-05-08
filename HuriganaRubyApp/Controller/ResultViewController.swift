@@ -9,19 +9,20 @@
 import UIKit
 
 class ResultViewController: UIViewController, UITextFieldDelegate {
+    // 前の画面から渡される変数
+    var result: String!
 
     @IBOutlet weak var resultTextView: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         resultTextView.delegate = self
-
+        // ここで showResult を実行する
+        showResult(resultString: result)
     }
-
 
     func showResult(resultString: String) {
         resultTextView?.text = resultString
         print(resultString)
     }
-
 }
