@@ -7,51 +7,64 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var inputTextView: UITextField!
-    @IBOutlet weak var outputTextView: UITextField!
+    // APIRequestの初期化
+    var apiRequest = APIRequest()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        initInputText()
-       // HttpRequest()
-      // getArticles()
 
+        inputTextView.delegate = self
+        initInputText()
     }
+
     private func initInputText() {
         inputTextView.text = ""
     }
 
-    @IBAction func convertButton(_ sender: UIButton) {
-        HttpRequest(sentence: inputTextView.text!)
-        //presenterのconvertToRubiを入力した文字列を引数にして実行
-
+    //タッチでキーボードを閉じる
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 
-    func HttpRequest(sentence: String) {
-        let url = "https://labs.goo.ne.jp/api/hiragana"
-//        let headers: HTTPHeaders = [
-//            "Contenttype": "application/json"
-//        ]
-        let parameters:[String: Any] = [
-            "app_id": GooAPI.APP_ID,
-            "request_id": "",
-             "sentence": sentence,
-             "output_type": "hiragana"
-            ]
+    //エンターでキーボードを閉じる
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
 
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
-            if let result = response.result.value as? [String: Any] {
-                print(result)
+        if let imputWord = inputTextView.text{
+            print("変換前　:" + imputWord)
+        }
+        return true
+    }
+
+    @IBAction func convertButton(_ sender: UIButton) {
+        //キーボードを閉じる
+        view.endEditing(true)
+        
+
+        // リクエストを渡す時にクロージャも渡し、その内部で書き換えの処理を行う
+        // クロージャの処理は completion: の後の {} の中
+        apiRequest.HttpRequest(sentence: inputTextView.text!, completion: {
+            result in
+
+            // prepare の sender: には result を渡す
+            self.performSegue(withIdentifier: "nextSegue", sender: result)
+
+        })
+    }
+
+    // segue を使って値渡しする場合
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 遷移先が ResultViewController の場合
+        if let nextVC = segue.destination as? ResultViewController {
+            // sender が　String としてダウンキャストできる場合
+            if let result = sender as? String {
+                // 遷移先のプロパティに値をセットする
+                nextVC.result = result
             }
         }
-
     }
-    
-
-
 }

@@ -8,23 +8,21 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController, UITextFieldDelegate {
+    // 前の画面から渡される変数
+    var result: String!
+
+    @IBOutlet weak var resultTextView: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        resultTextView.delegate = self
+        // ここで showResult を実行する
+        showResult(resultString: result)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func showResult(resultString: String) {
+        resultTextView?.text = resultString
+        print(resultString)
     }
-    */
-
 }
