@@ -8,3 +8,5 @@
   SwiftFormat(0.44.8): ソースコードを自動整形(フォーマット)してくれるツール　https://github.com/nicklockwood/SwiftFormat
   SwiftLint(0.39.2): ソースコードを検査してくれるツール　https://github.com/realm/SwiftLint
 [利用API]ふりがなAPI https://labs.goo.ne.jp/api/jp/hiragana-translation/
+
+<img width="311" alt="スクリーンショット 2020-05-08 17 22 34" src="https://user-images.githubusercontent.com/51296886/81387096-1a6dbf80-9151-11ea-9b63-f2eed9b4b1b8.png"><img width="160" alt="スクリーンショット 2020-05-08 17 23 32" src="https://user-images.githubusercontent.com/51296886/81387107-1e99dd00-9151-11ea-97d4-d046da4abd1b.png"><img width="285" alt="スクリーンショット 2020-05-08 17 24 46" src="https://user-images.githubusercontent.com/51296886/81387109-1f327380-9151-11ea-8571-2b70d21ef1dc.png">
