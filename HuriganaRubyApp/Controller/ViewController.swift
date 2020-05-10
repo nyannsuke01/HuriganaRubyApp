@@ -34,23 +34,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
 
-        if let imputWord = inputTextView.text{
-            print("変換前　:" + imputWord)
-        }
         return true
     }
 
     @IBAction func convertButton(_ sender: UIButton) {
-        //キーボードを閉じる
         view.endEditing(true)
-        
 
-        // リクエストを渡す時にクロージャも渡し、その内部で書き換えの処理を行う
-        // クロージャの処理は completion: の後の {} の中
         apiRequest.HttpRequest(sentence: inputTextView.text!, completion: {
             result in
 
-            // prepare の sender: には result を渡す
+            // segue を使う遷移
             self.performSegue(withIdentifier: "nextSegue", sender: result)
 
         })

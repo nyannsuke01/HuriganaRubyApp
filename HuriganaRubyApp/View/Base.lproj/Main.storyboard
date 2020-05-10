@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" title="ひらがなに変換" id="1xE-JK-7Gi"/>
                     <connections>
                         <outlet property="inputTextView" destination="59a-zD-eoe" id="bCR-bJ-ekW"/>
-                        <segue destination="5E2-gj-dVj" kind="show" identifier="nextSegue" id="nhf-Dh-R40"/>
+                        <segue destination="5E2-gj-dVj" kind="show" identifier="nextSegue" id="al3-b5-FuV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
