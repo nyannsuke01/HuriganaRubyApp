@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var inputTextView: UITextField!
+    @IBOutlet weak var convertButton: UIButton!
+
     // APIRequestの初期化
     var apiRequest = APIRequest()
 
@@ -19,6 +21,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
         inputTextView.delegate = self
         initInputText()
+        updateCtrlState()
     }
 
     private func initInputText() {
@@ -35,6 +38,20 @@ class ViewController: UIViewController,UITextFieldDelegate {
         textField.resignFirstResponder()
 
         return true
+    }
+
+    @IBAction func textEditDidChange(_ sender: Any) {
+        updateCtrlState()
+    }
+    // ボタンの状態を更新する関数
+    private func updateCtrlState() {
+        if inputTextView.text! == "" {
+            convertButton.isEnabled = false
+            convertButton.backgroundColor = UIColor.lightGray
+        } else {
+            convertButton.isEnabled = true
+            convertButton.backgroundColor = UIColor.blue
+        }
     }
 
     @IBAction func convertButton(_ sender: UIButton) {

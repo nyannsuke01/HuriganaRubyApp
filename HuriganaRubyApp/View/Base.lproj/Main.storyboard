@@ -19,10 +19,13 @@
                                 <rect key="frame" x="57" y="128" width="261" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textEditDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="N7i-DC-hsX"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="convertButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXe-es-3u5">
                                 <rect key="frame" x="158" y="202" width="59" height="47"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="変換">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,6 +52,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ひらがなに変換" id="1xE-JK-7Gi"/>
                     <connections>
+                        <outlet property="convertButton" destination="LXe-es-3u5" id="GcC-lB-2Wd"/>
                         <outlet property="inputTextView" destination="59a-zD-eoe" id="bCR-bJ-ekW"/>
                         <segue destination="5E2-gj-dVj" kind="show" identifier="nextSegue" id="al3-b5-FuV"/>
                     </connections>
@@ -124,4 +128,5 @@
         <image name="fairy_gide" width="602" height="594"/>
         <image name="resultImage" width="590" height="722"/>
     </resources>
+    <color key="tintColor" red="0.0" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
