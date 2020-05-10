@@ -12,7 +12,7 @@ import XCTest
 class HuriganaRubyTests: XCTestCase {
     var VC: ViewController!
     var ResultVC: ResultViewController!
-    var API: APIRequest!
+    var APIRequest: APIRequest!
 
     override func setUp() {
         VC = ViewController()
@@ -23,32 +23,14 @@ class HuriganaRubyTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    // 入力文字が空(エラー)
-    func testInputEmptyConvertToRubi() {
-        let sentence = ""
-        let expectected = Message.Error.NO_INPUT_TEXT
-        let exp: XCTestExpectation! = self.expectation(description: "testInputEmptyConvertToRubi")
-        APIRequest.HttpRequest(sentence: sentence,
-                                           success: { rubiResponseData in
-                                            XCTFail("converted:" + rubiResponseData.converted)
-                                            exp.fulfill()
-        },
-                                           failure: { errorText in
-                                            XCTAssertEqual(expectected, errorText)
-                                            exp.fulfill()
-
-        })
-        self.waitForExpectations(timeout: 10.0, handler: nil)
-    }
-
     // 入力文字が漢字
-    func testInputKanjiConvertToRubi() {
+    func testInputKanjiConvert() {
         let sentence = "漢字"
         let expectected = "かんじ"
-        let exp: XCTestExpectation! = self.expectation(description: "testInputKanjiConvertToRubi")
+        let exp: XCTestExpectation! = self.expectation(description: "testInputKanjiConvert")
         APIRequest.HttpRequest(sentence: sentence,
-                                           success: { rubiResponseData in
-                                            XCTAssertEqual(expectected, rubiResponseData.converted)
+                                           success: { ResponseData in
+                                            XCTAssertEqual(expectected, ResponseData.converted)
                                             exp.fulfill()
 
         },
@@ -61,13 +43,13 @@ class HuriganaRubyTests: XCTestCase {
     }
 
     // 入力文字がひらがな
-    func testInputHiraganaConvertToRubi() {
+    func testInputHiraganaConvert() {
         let sentence = "ひらがな"
         let expectected = "ひらがな"
-        let exp: XCTestExpectation! = self.expectation(description: "testInputHiraganaConvertToRubi")
+        let exp: XCTestExpectation! = self.expectation(description: "testInputHiraganaConvert")
         APIRequest.HttpRequest(sentence: sentence,
-                                           success: { rubiResponseData in
-                                            XCTAssertEqual(expectected, rubiResponseData.converted)
+                                           success: { ResponseData in
+                                            XCTAssertEqual(expectected, ResponseData.converted)
                                             exp.fulfill()
 
         },
@@ -80,13 +62,13 @@ class HuriganaRubyTests: XCTestCase {
     }
 
     // 入力文字が数字
-    func testInputNumberConvertToRubi() {
+    func testInputNumberConvert() {
         let sentence = "1230"
-        let expectected = "せんにひゃくさんじゅう"
-        let exp: XCTestExpectation! = self.expectation(description: "testInputNumberConvertToRubi")
+        let expectected = "せんにひゃくさんじゅー"
+        let exp: XCTestExpectation! = self.expectation(description: "testInputNumberConvert")
         APIRequest.HttpRequest(sentence: sentence,
-                                           success: { rubiResponseData in
-                                            XCTAssertEqual(expectected, rubiResponseData.converted)
+                                           success: { ResponseData in
+                                            XCTAssertEqual(expectected, ResponseData.converted)
                                             exp.fulfill()
 
         },
@@ -99,13 +81,13 @@ class HuriganaRubyTests: XCTestCase {
     }
 
     // 入力文字がローマ字
-    func testInputRomanConvertToRubi() {
+    func testInputRomanConvert() {
         let sentence = "abc"
         let expectected = "えーびーしー"
-        let exp: XCTestExpectation! = self.expectation(description: "testInputRomanConvertToRubi")
+        let exp: XCTestExpectation! = self.expectation(description: "testInputRomanConvert")
         APIRequest.HttpRequest(sentence: sentence,
-                                           success: { rubiResponseData in
-                                            XCTAssertEqual(expectected, rubiResponseData.converted)
+                                           success: { ResponseData in
+                                            XCTAssertEqual(expectected, ResponseData.converted)
                                             exp.fulfill()
 
         },
@@ -118,13 +100,13 @@ class HuriganaRubyTests: XCTestCase {
     }
 
     // 入力文字が記号
-    func testInputSymbolConvertToRubi() {
+    func testInputSymbolConvert() {
         let sentence = "//(^_^);:"
         let expectected = "//(^_^);:"
-        let exp: XCTestExpectation! = self.expectation(description: "testInputSymbolConvertToRubi")
+        let exp: XCTestExpectation! = self.expectation(description: "testInputSymbolConvert")
         APIRequest.HttpRequest(sentence: sentence,
-                                           success: { rubiResponseData in
-                                            XCTAssertEqual(expectected, rubiResponseData.converted)
+                                           success: { ResponseData in
+                                            XCTAssertEqual(expectected, ResponseData.converted)
                                             exp.fulfill()
         },
                                            failure: { errorText in
