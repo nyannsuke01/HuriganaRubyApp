@@ -17,7 +17,6 @@ class ResultViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         resultTextView.delegate = self
-        // ここで showResult を実行する
         showResult(resultString: result)
     }
 

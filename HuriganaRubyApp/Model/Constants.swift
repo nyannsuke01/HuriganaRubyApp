@@ -9,7 +9,7 @@
 import Foundation
 
 struct GooAPI {
-    static let APP_ID = "e987ad7dfd648088566a4480d57a7a96816e3f36dfed860c37f958fb7d95da4e"
+    static let APP_ID = "ここに発行したAPP_IDを入れてください"
 
     struct Request {
         static let URL = "https://labs.goo.ne.jp/api/hiragana"
