@@ -12,11 +12,12 @@ import XCTest
 class HuriganaRubyTests: XCTestCase {
     var VC: ViewController!
     var ResultVC: ResultViewController!
-    var APIRequest: APIRequest!
+    var apiRequest: APIRequest!
 
     override func setUp() {
         VC = ViewController()
         ResultVC = ResultViewController()
+        apiRequest = APIRequest()
     }
 
     override func tearDown() {
@@ -28,20 +29,22 @@ class HuriganaRubyTests: XCTestCase {
         let sentence = "漢字"
         let expectected = "かんじ"
         let exp: XCTestExpectation! = self.expectation(description: "testInputKanjiConvert")
-        APIRequest.HttpRequest(sentence: sentence,
-                                           success: { ResponseData in
-                                            XCTAssertEqual(expectected, ResponseData.converted)
+        apiRequest.HttpRequest(sentence: sentence,
+                                           completion:  { result, error in
+                                            if result == nil {
+                                                XCTFail()
+                                                exp.fulfill()
+                                            }
+
+                                            XCTAssertNotNil(result)
+                                            XCTAssertEqual(expectected, result)
+
                                             exp.fulfill()
 
-        },
-                                           failure: { errorText in
-                                            XCTFail("errorText:" + errorText)
-                                            exp.fulfill()
-
-        })
+        } )
         self.waitForExpectations(timeout: 10.0, handler: nil)
     }
-
+/*
     // 入力文字がひらがな
     func testInputHiraganaConvert() {
         let sentence = "ひらがな"
@@ -116,5 +119,6 @@ class HuriganaRubyTests: XCTestCase {
         })
         self.waitForExpectations(timeout: 10.0, handler: nil)
     }
+ */
 }
 
