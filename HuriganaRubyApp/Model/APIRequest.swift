@@ -14,7 +14,7 @@ public class APIRequest {
 
     func HttpRequest(sentence: String, completion: @escaping (String?, Error?) -> Void, failure:(Error)->Void ) {
         let url = URL(string: "https://labs.goo.ne.jp/api/hiragana")!
-        let parameters = ["app_id":"ここに発行したAPP_IDを入れてください",
+        let parameters = ["app_id":"e987ad7dfd648088566a4480d57a7a96816e3f36dfed860c37f958fb7d95da4e",
                           "sentence":"\(sentence)",
                           "output_type":"hiragana"]
 
