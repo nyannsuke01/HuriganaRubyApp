@@ -12,7 +12,7 @@ import SwiftyJSON
 
 public class APIRequest {
 
-    func HttpRequest(sentence: String, completion: @escaping (String) -> Void ) {
+    func HttpRequest(sentence: String, completion: @escaping (String?, Error?) -> Void, failure:(Error)->Void ) {
         let url = URL(string: "https://labs.goo.ne.jp/api/hiragana")!
         let parameters = ["app_id":"ここに発行したAPP_IDを入れてください",
                           "sentence":"\(sentence)",
@@ -33,13 +33,17 @@ public class APIRequest {
                         // クロージャで渡された処理がメインキューで行うべき処理かもしれないので、メインキューで処理する
                         DispatchQueue.main.async {
                             // クロージャの処理
-                            completion(resultString)
+                            completion(resultString, nil)
                         }
+                    }else{
+                            failure(Error())
                     }
+
                 }
             // 処理失敗時
             case .failure(let error):
                 print("error: ", error.localizedDescription)
+                failure(error)
             }
         }
     }
