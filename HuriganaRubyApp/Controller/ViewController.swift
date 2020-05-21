@@ -58,7 +58,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         view.endEditing(true)
 
         apiRequest.HttpRequest(sentence: inputTextView.text!, completion: {
-            result in
+            result, _ in
 
             // segue を使う遷移
             self.performSegue(withIdentifier: "nextSegue", sender: result)
